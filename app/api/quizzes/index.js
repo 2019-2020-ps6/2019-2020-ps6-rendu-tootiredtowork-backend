@@ -12,6 +12,14 @@ router.get('/', (req, res) => {
   }
 })
 
+router.get('/:id', (req, res) => {
+  try {
+    res.status(200).json(Quiz.getById(req.params.id))
+  } catch (err) {
+    res.status(500).json(err)
+  }
+})
+
 router.post('/', (req, res) => {
   try {
     const quiz = Quiz.create({ ...req.body })
