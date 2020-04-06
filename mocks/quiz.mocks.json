@@ -1,0 +1,50 @@
+[
+  {
+    "id": "L'amerique",
+    "difficulty": 2,
+    "questions": [
+      {
+        "label": "Question 1",
+        "answers": [
+          {
+            "value": "Réponse 1",
+            "isCorrect": true
+          },
+          {
+            "value": "Réponse 2",
+            "isCorrect": false
+          },
+          {
+            "value": "Réponse 3",
+            "isCorrect": false
+          },
+          {
+            "value": "Réponse 4",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "label": "Question 2",
+        "answers": [
+          {
+            "value": "Réponse 1",
+            "isCorrect": true
+          },
+          {
+            "value": "Réponse 2",
+            "isCorrect": false
+          },
+          {
+            "value": "Réponse 3",
+            "isCorrect": false
+          },
+          {
+            "value": "Réponse 4",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  }
+]
