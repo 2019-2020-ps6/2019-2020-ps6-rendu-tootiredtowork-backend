@@ -96,54 +96,6 @@
     ]
   },
   {
-    "id": "Foot",
-    "difficulty": 3,
-    "questions": [
-      {
-        "label": "Qui est surnomé CR7 ?",
-        "answers": [
-          {
-            "value": "Christiano Ronaldo",
-            "isCorrect": true
-          },
-          {
-            "value": "Zinedine zidane",
-            "isCorrect": false
-          },
-          {
-            "value": "Neimar",
-            "isCorrect": false
-          },
-          {
-            "value": "Anthony Griezman",
-            "isCorrect": false
-          }
-        ]
-      },
-      {
-        "label": "Première équipe nationale à avoir remporté la Coupe du monde.",
-        "answers": [
-          {
-            "value": "Uruguay",
-            "isCorrect": true
-          },
-          {
-            "value": "Chine",
-            "isCorrect": false
-          },
-          {
-            "value": "France",
-            "isCorrect": false
-          },
-          {
-            "value": "Argentine",
-            "isCorrect": false
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "Thomas",
     "difficulty": 1,
     "questions": [

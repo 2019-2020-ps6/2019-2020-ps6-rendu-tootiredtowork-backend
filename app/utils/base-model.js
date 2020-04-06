@@ -14,6 +14,7 @@ module.exports = class BaseModel {
     this.name = name
     this.filePath = `${__dirname}/../../mocks/${this.name.toLowerCase()}.mocks.json`
     this.load()
+    this.filePath = `${__dirname}/../../mocks/${this.name.toLowerCase()}.test.json`
   }
 
   load() {
