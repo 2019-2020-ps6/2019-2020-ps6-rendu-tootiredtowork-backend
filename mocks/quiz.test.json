@@ -96,68 +96,47 @@
     ]
   },
   {
-    "id": "Thomas",
-    "difficulty": 1,
+    "id": "Foot",
+    "difficulty": 3,
     "questions": [
       {
-        "label": "Comment s' appelle Thomas ?",
+        "label": "Qui est surnomé CR7 ?",
         "answers": [
           {
-            "value": "Thomas",
+            "value": "Christiano Ronaldo",
             "isCorrect": true
           },
           {
-            "value": "Bitenmiel",
+            "value": "Zinedine zidane",
             "isCorrect": false
           },
           {
-            "value": "Cédric",
+            "value": "Neimar",
             "isCorrect": false
           },
           {
-            "value": "Odd",
+            "value": "Anthony Griezman",
             "isCorrect": false
           }
         ]
       },
       {
-        "label": "Quel parcours a-t-il fait avant de venir a Polytech ?",
+        "label": "Première équipe nationale à avoir remporté la Coupe du monde.",
         "answers": [
           {
-            "value": "IUT",
+            "value": "Uruguay",
             "isCorrect": true
           },
           {
-            "value": "Rien",
+            "value": "Chine",
             "isCorrect": false
           },
           {
-            "value": "SDF",
+            "value": "France",
             "isCorrect": false
           },
           {
-            "value": "une école d'art moderne",
-            "isCorrect": false
-          }
-        ]
-      },
-      {
-        "label": "Va t-il valider son semestre ?",
-        "answers": [
-          {
-            "value": "Non",
-            "isCorrect": true
-          },
-          {
-            "value": "Oui",
-            "isCorrect": false
-          },
-          {
-            "value": "Oui-oui",
-            "isCorrect": false
-          },
-          {
-            "value": "Non-non",
+            "value": "Argentine",
             "isCorrect": false
           }
         ]
