@@ -24,12 +24,11 @@ router.get('/:id', (req, res) => {
   }
 })
 
-router.post('/:id/:number', (req, res) => {
+router.post('/:id', (req, res) => {
   try {
     const quiz = Quiz.update(req.params.id,{ ...req.body })
-    res.status(201).json(question)
+    res.status(201).json(quiz)
   } catch (err) {
-    console.log("zz");
     if (err.name === 'ValidationError') {
       res.status(400).json(err.extra)
     } else {
@@ -37,6 +36,8 @@ router.post('/:id/:number', (req, res) => {
     }
   }
 })
+
+
 
 
 router.put('/:id', (req, res) => {
