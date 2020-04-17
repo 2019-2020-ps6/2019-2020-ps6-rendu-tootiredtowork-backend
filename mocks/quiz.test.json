@@ -1,6 +1,55 @@
 [
   {
     "id": "Les pays",
-    "quizs": []
+    "quizs": [
+      {
+        "id": "L'amerique",
+        "difficulty": 2,
+        "questions": [
+          {
+            "label": "usa",
+            "answers": [
+              {
+                "value": "Réponse 1",
+                "isCorrect": true
+              },
+              {
+                "value": "Réponse 2",
+                "isCorrect": false
+              },
+              {
+                "value": "Réponse 3",
+                "isCorrect": false
+              },
+              {
+                "value": "Réponse 4",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "label": "Donald",
+            "answers": [
+              {
+                "value": "Réponse 1",
+                "isCorrect": true
+              },
+              {
+                "value": "Réponse 2",
+                "isCorrect": false
+              },
+              {
+                "value": "Réponse 3",
+                "isCorrect": false
+              },
+              {
+                "value": "Réponse 4",
+                "isCorrect": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
