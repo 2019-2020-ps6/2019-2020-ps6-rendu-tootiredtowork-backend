@@ -37,12 +37,25 @@ module.exports = class BaseModel {
     return this.items
   }
 
-  getById(id) {
+  getTheme(id) {
     const item = this.items.find((i) => i.id === id)
     if (!item) throw new NotFoundError(`Cannot get ${this.name} id=${id} : not found`)
     return item
   }
 
+  getQuizzes(id) {
+    const item = this.items.find((i) => i.id === id)
+    if (!item) throw new NotFoundError(`Cannot get ${this.name} id=${id} : not found`)
+    return item.quizs
+  }
+
+  getQuiz(theme,id) {
+    const item = this.items.find((i) => i.id === theme)
+    if (!item) throw new NotFoundError(`Cannot get ${this.name} id=${id} : not found`)
+    const quiz= item.quizs.find((i) => i.id === id)
+    return quiz
+  }
+  
   create(obj = {}) {
     const item = { ...obj }
     const { error } = Joi.validate(item, this.schema)
@@ -52,21 +65,34 @@ module.exports = class BaseModel {
     return item
   }
 
-  update(id, obj) {
-    const prevObjIndex = this.items.findIndex((item) => item.id === id)
-    if (prevObjIndex === -1) throw new NotFoundError(`Cannot update ${this.name} id=${id} : not found`)
-    const updatedItem = { ...this.items[prevObjIndex], ...obj }
+  update(theme,id, obj) {
+    //theme
+    const prevObjIndexTheme = this.items.findIndex((item) => item.id === theme)
+    if (prevObjIndexTheme === -1) throw new NotFoundError(`Cannot update ${this.name} id=${theme} : not found`)
+
+    const Theme = this.items.find((i) => i.id === theme)
+
+    //quiz
+    const prevObjIndexQuiz = Theme.quizs.findIndex((item) => item.id === id)
+    if (prevObjIndexQuiz === -1) throw new NotFoundError(`Cannot update ${this.name} id=${id} : not found`)
+    
+    const updatedItem = { ...this.items[prevObjIndexTheme].quizs[prevObjIndexQuiz], ...obj }
     const { error } = Joi.validate(updatedItem, this.schema)
     if (error) throw new ValidationError(`Update Error : Object ${JSON.stringify(obj)} does not match schema of model ${this.name}`, error)
-    this.items[prevObjIndex] = updatedItem
+    this.items[prevObjIndexTheme].quizs[prevObjIndexQuiz] = updatedItem
     this.save()
     return updatedItem
   }
 
-  delete(id) {
-    const objIndex = this.items.findIndex((item) => item.id === id)
-    if (objIndex === -1) throw new NotFoundError(`Cannot delete ${this.name} id=${id} : not found`)
-    this.items = this.items.filter((item) => item.id !== id)
+  deleteQuiz(theme,id) {
+    const objIndex = this.items.findIndex((item) => item.id === theme)
+    if (objIndex === -1) throw new NotFoundError(`Cannot delete ${this.name} id=${theme} : not found`)
+
+    const Theme = this.items.find((i) => i.id === theme)
+
+    const prevObjIndexQuiz = Theme.quizs.findIndex((item) => item.id === id)
+    if (prevObjIndexQuiz === -1) throw new NotFoundError(`Cannot delete ${this.name} id=${id} : not found`)
+    this.items[objIndex].quizs = this.items[objIndex].quizs.filter((item) => item.id !== id)
     this.save()
   }
 }
