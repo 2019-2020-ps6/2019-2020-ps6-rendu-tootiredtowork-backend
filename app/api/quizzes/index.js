@@ -43,6 +43,7 @@ router.get('/:theme/:id', (req, res) => {
 
 router.post('/:theme/:id', (req, res) => {
   try {
+    console.log(req.body)
     const quiz = Quiz.update(req.params.theme,req.params.id,{ ...req.body })
     res.status(201).json(quiz)
   } catch (err) {
@@ -54,9 +55,6 @@ router.post('/:theme/:id', (req, res) => {
   }
 })
 
-
-
-
 router.put('/:id', (req, res) => {
   try {
     res.status(200).json(Quiz.update(req.params.id, req.body))
@@ -65,10 +63,27 @@ router.put('/:id', (req, res) => {
   }
 })
 
+router.delete('/:theme', (req, res) => {
+  try {
+    Quiz.deleteTheme(req.params.theme)
+    res.status(204).end()
+  } catch (err) {
+    manageAllErrors(res, err)
+  }
+})
 
 router.delete('/:theme/:id', (req, res) => {
   try {
     Quiz.deleteQuiz(req.params.theme,req.params.id)
+    res.status(204).end()
+  } catch (err) {
+    manageAllErrors(res, err)
+  }
+})
+
+router.delete('/:theme/:id/:label', (req, res) => {
+  try {
+    Quiz.deleteQuestion(req.params.theme,req.params.id,req.params.label)
     res.status(204).end()
   } catch (err) {
     manageAllErrors(res, err)
