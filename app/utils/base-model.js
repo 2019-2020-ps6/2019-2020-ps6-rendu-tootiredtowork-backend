@@ -83,7 +83,7 @@ module.exports = class BaseModel {
     this.save()
     return updatedItem
   }
-
+  
   deleteQuiz(theme,id) {
     const objIndex = this.items.findIndex((item) => item.id === theme)
     if (objIndex === -1) throw new NotFoundError(`Cannot delete ${this.name} theme=${theme} : not found`)
