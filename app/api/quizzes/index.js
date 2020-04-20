@@ -39,7 +39,18 @@ router.get('/:theme/:id', (req, res) => {
   }
 })
 
-
+router.post('/:theme/add', (req, res) => {
+  try {
+    const quiz = Quiz.addQuiz(req.params.theme,{ ...req.body })
+    res.status(201).json(quiz)
+  } catch (err) {
+    if (err.name === 'ValidationError') {
+      res.status(400).json(err.extra)
+    } else {
+      res.status(500).json(err)
+    }
+  }
+})
 
 router.post('/:theme/:id', (req, res) => {
   try {
@@ -52,14 +63,6 @@ router.post('/:theme/:id', (req, res) => {
     } else {
       res.status(500).json(err)
     }
-  }
-})
-
-router.put('/:id', (req, res) => {
-  try {
-    res.status(200).json(Quiz.update(req.params.id, req.body))
-  } catch (err) {
-    manageAllErrors(res, err)
   }
 })
 
