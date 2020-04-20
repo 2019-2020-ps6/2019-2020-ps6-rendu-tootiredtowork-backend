@@ -97,7 +97,6 @@ module.exports = class BaseModel {
   }
 
   addQuiz(theme, obj) {
-    console.log("eeeeeeeeeeeeeee");
     const objIndex = this.items.findIndex((item) => item.id === theme)
     if (objIndex === -1) throw new NotFoundError(`Cannot delete ${this.name} theme=${theme} : not found`)
 
