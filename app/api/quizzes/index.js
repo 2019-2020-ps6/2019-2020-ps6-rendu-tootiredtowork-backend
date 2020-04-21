@@ -52,6 +52,19 @@ router.post('/:theme/add', (req, res) => {
   }
 })
 
+router.post('/add', (req, res) => {
+  try {
+    const theme = Quiz.addTheme({ ...req.body })
+    res.status(201).json(theme)
+  } catch (err) {
+    if (err.name === 'ValidationError') {
+      res.status(400).json(err.extra)
+    } else {
+      res.status(500).json(err)
+    }
+  }
+})
+
 router.post('/:theme/:id', (req, res) => {
   try {
     console.log(req.body)

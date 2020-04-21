@@ -105,6 +105,11 @@ module.exports = class BaseModel {
   this.items[objIndex].quizs.push(obj)
   }
 
+  addTheme(obj) {
+  this.items.push(obj);
+  console.log(this.items);
+  }
+
   deleteQuestion(theme,id,label) {
 
     const objIndex = this.items.findIndex((item) => item.id === theme)
