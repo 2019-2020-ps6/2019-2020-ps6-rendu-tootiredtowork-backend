@@ -67,7 +67,6 @@ router.post('/add', (req, res) => {
 
 router.post('/:theme/:id', (req, res) => {
   try {
-    console.log(req.body)
     const quiz = Quiz.update(req.params.theme,req.params.id,{ ...req.body })
     res.status(201).json(quiz)
   } catch (err) {

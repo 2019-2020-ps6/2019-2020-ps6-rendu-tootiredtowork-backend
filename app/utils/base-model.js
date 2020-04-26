@@ -101,16 +101,14 @@ module.exports = class BaseModel {
     if (objIndex === -1) throw new NotFoundError(`Cannot delete ${this.name} theme=${theme} : not found`)
 
    const Theme = this.items.find((i) => i.id === theme)
-  console.log(obj);
   this.items[objIndex].quizs.push(obj)
   }
 
   addTheme(obj) {
   this.items.push(obj);
-  console.log(this.items);
   }
 
-  deleteQuestion(theme,id,label) {
+  deleteQuestion(theme,id,position) {
 
     const objIndex = this.items.findIndex((item) => item.id === theme)
     if (objIndex === -1) throw new NotFoundError(`Cannot delete ${this.name} theme=${theme} : not found`)
@@ -118,17 +116,18 @@ module.exports = class BaseModel {
 
     const prevObjIndexQuiz = Theme.quizs.findIndex((item) => item.id === id)
     if (prevObjIndexQuiz === -1) throw new NotFoundError(`Cannot delete ${this.name} quiz=${id} : not found`)
+
     const Quiz = Theme.quizs.find((i) => i.id === id)
-    const prevObjIndexQuestion = Quiz.questions.findIndex((item) => item.label === label)
-    if (prevObjIndexQuiz === -1) throw new NotFoundError(`Cannot delete ${this.name} label=${label} : not found`)
-    this.items[objIndex].quizs[prevObjIndexQuiz].questions = this.items[objIndex].quizs[prevObjIndexQuiz].questions.filter((item) => item.label !== label)
+    const question = Quiz.questions[position]
+    
+    this.items[objIndex].quizs[prevObjIndexQuiz].questions = this.items[objIndex].quizs[prevObjIndexQuiz].questions.filter((item) => item !== question)
+
     this.save()
   }
 
     deleteTheme(theme) {
 
     const objIndex = this.items.findIndex((item) => item.id === theme)
-     console.log(objIndex)
     if (objIndex === -1) throw new NotFoundError(`Cannot delete ${this.name} theme=${theme} : not found`)
     this.items = this.items.filter((item) => item.id !== theme)
     this.save()
