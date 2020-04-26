@@ -1,49 +1,133 @@
 [
   {
-    "id": "Theme 1",
+    "id": "Culture générale ",
     "quizs": [
         {
             "id": "Quiz 1-1",
-            "difficulty": 3,
+            "difficulty": 1,
             "questions": [
                 {
-                    "label": "usa",
+                    "label": "Au Moyen-Âge, comment appelait-on les villages fortifiés ?",
                     "answers": [
                         {
-                            "value": "Réponse 1",
+                            "value": "Tour ",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Bastide",
                             "isCorrect": true
                         },
                         {
-                            "value": "Réponse 2",
+                            "value": "Château fort",
                             "isCorrect": false
                         },
                         {
-                            "value": "Réponse 3",
-                            "isCorrect": false
-                        },
-                        {
-                            "value": "Réponse 4",
+                            "value": "Rempart",
                             "isCorrect": false
                         }
                     ]
                 },
                 {
-                    "label": "Donald",
+                    "label": "Quel acteur français avait le premier rôle dans le film de Luchino Visconti (Le Guépard) ?",
                     "answers": [
                         {
-                            "value": "Réponse 1",
+                            "value": "Jean-Paul Belmondo",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Claude Brasseur",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Jean Gabin",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Alain Delon",
+                            "isCorrect": true
+                        }
+                    ]
+                },
+                {
+                    "label": "Comment appelle-t-on le fruit du plaqueminier ?",
+                    "answers": [
+                        {
+                            "value": "Kakou",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Kacha",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Kaki",
                             "isCorrect": true
                         },
                         {
-                            "value": "Réponse 2",
+                            "value": "Kali",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "label": "Quel titre de noblesse est immédiatement inférieur à celui de comte ?",
+                    "answers": [
+                        {
+                            "value": "Archiduc",
                             "isCorrect": false
                         },
                         {
-                            "value": "Réponse 3",
+                            "value": "Marquis",
                             "isCorrect": false
                         },
                         {
-                            "value": "Réponse 4",
+                            "value": "Vicomte",
+                            "isCorrect": true
+                        },
+                        {
+                            "value": "Duc",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "label": "Quelle est la capitale de la Nouvelle-Zélande ?",
+                    "answers": [
+                        {
+                            "value": "Dublin",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Auckland",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Wellington",
+                            "isCorrect": true
+                        },
+                        {
+                            "value": "Sydney",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "label": "Dans quel film un couple en croisière va-t-il recueillir un naufragé qui va les terrifier ?",
+                    "answers": [
+                        {
+                            "value": "Calme blanc",
+                            "isCorrect": true
+                        },
+                        {
+                            "value": "Tempête en mer",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Le naufragé",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Les disparus",
                             "isCorrect": false
                         }
                     ]
@@ -52,47 +136,195 @@
         },
         {
             "id": "Quiz 1-2",
-            "difficulty": 1,
+            "difficulty": 3,
             "questions": [
                 {
-                    "label": "usa",
+                    "label": "Qui a inventé les transports en communs modernes ?",
                     "answers": [
                         {
-                            "value": "Réponse 1",
+                            "value": "Séraphin Lampion",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Blaise Pascal",
                             "isCorrect": true
                         },
                         {
-                            "value": "Réponse 2",
+                            "value": "René Descartes",
                             "isCorrect": false
                         },
                         {
-                            "value": "Réponse 3",
-                            "isCorrect": false
-                        },
-                        {
-                            "value": "Réponse 4",
+                            "value": "Eugène Poubelle",
                             "isCorrect": false
                         }
                     ]
                 },
                 {
-                    "label": "Donald",
+                    "label": "Quelle est l'unité de mesure de la force d'un piment ?",
                     "answers": [
                         {
-                            "value": "Réponse 1",
+                            "value": "L'unité thermoptim",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "L'unité scoville",
                             "isCorrect": true
                         },
                         {
-                            "value": "Réponse 2",
+                            "value": "L'unité cherit",
                             "isCorrect": false
                         },
                         {
-                            "value": "Réponse 3",
+                            "value": "L'unité hauy",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "label": "Que fête t-on le 14 juillet en France ?",
+                    "answers": [
+                        {
+                            "value": "La fête de la fédération",
+                            "isCorrect": true
+                        },
+                        {
+                            "value": "L'armistice de la guerre 14-18",
                             "isCorrect": false
                         },
                         {
-                            "value": "Réponse 4",
+                            "value": "Le début de la V° république",
                             "isCorrect": false
+                        },
+                        {
+                            "value": "La prise de la Bastille",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+
+                {
+                    "label": "Comment se nomme la peur du nombre 13 ?",
+                    "answers": [
+                        {
+                            "value": "La katagélophobie",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "L'anuptaphobie",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "La triskaidékaphobie",
+                            "isCorrect": true
+                        },
+                        {
+                            "value": "La sidérodromophobie",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "label": "Comment se nomme le signe (&) ?",
+                    "answers": [
+                        {
+                            "value": "Esperluette",
+                            "isCorrect": true
+                        },
+                        {
+                            "value": "Heperluette",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Eperluette",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Eperluète",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "label": "Qui est le Saint Patron des informaticiens et des internautes ?",
+                    "answers": [
+                        {
+                            "value": "Saint Hilaire de Poitiers",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Saint Serge de Radonège",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Saint Joseph de Copertino",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Saint Isidore de Séville",
+                            "isCorrect": true
+                        }
+                    ]
+                },
+                {
+                    "label": "Quel est la valeur du pH du Coca-Cola ?",
+                    "answers": [
+                        {
+                            "value": "2,3",
+                            "isCorrect": true
+                        },
+                        {
+                            "value": "4,5",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "5,3",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "7",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "label": "Le (Vosne-Romanée) est un vin de quelle région viticole ?",
+                    "answers": [
+                        {
+                            "value": "Les vins du Languedoc",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Les vins du Bordelais",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Les vins du Beaujolais",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Les vins de Bourgogne",
+                            "isCorrect": true
+                        }
+                    ]
+                },
+                {
+                    "label": "Qui était le premier président de la république ?",
+                    "answers": [
+                        {
+                            "value": "Adolphe Thiers",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Charles de Gaulle",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Raymond Poincaré",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Louis-Napoléon Bonaparte",
+                            "isCorrect": true
                         }
                     ]
                 }
@@ -100,46 +332,193 @@
         },
         {
             "id": "Quiz 1-3",
-            "difficulty": 3,
+            "difficulty": 2,
             "questions": [
                 {
-                    "label": "usa",
+                    "label": "Quand a été fixée la valeur de l'Euro ?",
                     "answers": [
                         {
-                            "value": "Réponse 1",
+                            "value": "Le 1er janvier 1998",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Le 1er janvier 1999",
                             "isCorrect": true
                         },
                         {
-                            "value": "Réponse 2",
+                            "value": "Le 31 décembre 1999",
                             "isCorrect": false
                         },
                         {
-                            "value": "Réponse 3",
-                            "isCorrect": false
-                        },
-                        {
-                            "value": "Réponse 4",
+                            "value": "Le 1er janvier 2000",
                             "isCorrect": false
                         }
                     ]
                 },
                 {
-                    "label": "Donald",
+                    "label": "Le didgeridoo est un instrument qui fait partie de quelle famille ?",
                     "answers": [
                         {
-                            "value": "Réponse 1",
+                            "value": "des percussions",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "des vents",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "des cuivres",
                             "isCorrect": true
                         },
                         {
-                            "value": "Réponse 2",
+                            "value": "des bois",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "label": "Une abeille danse en rond pour prévenir ses congénères qu'elle a trouvé de la nourriture à quelle distance de la ruche ?",
+                    "answers": [
+                        {
+                            "value": "15 mètres",
+                            "isCorrect": true
+                        },
+                        {
+                            "value": "50 mètres",
                             "isCorrect": false
                         },
                         {
-                            "value": "Réponse 3",
+                            "value": "100 mètres",
                             "isCorrect": false
                         },
                         {
-                            "value": "Réponse 4",
+                            "value": "250 mètres",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "label": "Le tournesol (suit) le soleil grâce à un phénomène nommé ?",
+                    "answers": [
+                        {
+                            "value": "Le phototactisme",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Le photochromisme",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Le photopériodisme",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Le phototropisme",
+                            "isCorrect": true
+                        }
+                    ]
+                },
+                {
+                    "label": "Un ouvrage permettant à un véhicule de surmonter une étendue infranchissable est ?",
+                    "answers": [
+                        {
+                            "value": "Un aqueduc",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Une passerelle",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Une buse",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Un viaduc",
+                            "isCorrect": true
+                        }
+                    ]
+                },
+                {
+                    "label": "A quelle étendue d'eau le morceau (Smoke on the water) de Deep Purple fait-il allusion ?",
+                    "answers": [
+                        {
+                            "value": "Le lac Léman",
+                            "isCorrect": true
+                        },
+                        {
+                            "value": "Le lac Titicaca",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Le lac Victoria",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Le loch ness",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "label": "Depuis quelle année le 1er mai est-il férié en France ?",
+                    "answers": [
+                        {
+                            "value": "1918",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "1936",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "1941",
+                            "isCorrect": true
+                        },
+                        {
+                            "value": "1957",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "label": "Comment se nommait la première machine à calculer portable ?",
+                    "answers": [
+                        {
+                            "value": "La edita",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "La curta",
+                            "isCorrect": true
+                        },
+                        {
+                            "value": "La venta",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "La lista",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "label": "Quel laboratoire a inventé sans le vouloir le viagra ?",
+                    "answers": [
+                        {
+                            "value": "Novartis",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Merck",
+                            "isCorrect": false
+                        },
+                        {
+                            "value": "Pfizer",
+                            "isCorrect": true
+                        },
+                        {
+                            "value": "Sanofi-Aventis",
                             "isCorrect": false
                         }
                     ]
