@@ -12,7 +12,7 @@ module.exports = class BaseModel {
     this.schema = Joi.object().keys({ ...schema })
     this.items = []
     this.name = name
-    this.filePath = `${__dirname}/../../mocks/${this.name.toLowerCase()}.mocks.json`
+    this.filePath = `${__dirname}/../../mocks/${this.name.toLowerCase()}normal.mocks.json`
     this.load()
     this.filePath = `${__dirname}/../../mocks/${this.name.toLowerCase()}.test.json`
   }
